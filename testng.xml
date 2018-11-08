@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuiteSelenium" verbose="1" >
+    <test name="AlzaTesting">
+        <parameter name="browser"  value="chrome"/>
+        <classes>
+            <class name="scenarios.TestProductInfo"/>
+        </classes>
+    </test>
+</suite>
