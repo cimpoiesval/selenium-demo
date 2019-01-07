@@ -9,13 +9,13 @@ public class CategoryPage extends AlzaPage {
     @FindBy(xpath = "//div[@class='catlist top']//span[contains(@class,'text')][contains(text(),'Chytré hodinky')]")
     private WebElement smartWatchPath;
 
-    @FindBy(xpath = "//div[@class='box browsingitem canBuy inStockAvailability action first firstRow']")
+    @FindBy(xpath = "//div[@class='box browsingitem canBuy inStockAvailability action firstRow'][1]")
     private WebElement firstProduct;
 
-    @FindBy(xpath = "//div[@class='box browsingitem canBuy inStockAvailability action first firstRow']/div[1]/div/a")
+    @FindBy(xpath = "//div[@class='box browsingitem canBuy inStockAvailability action firstRow'][1]/div[1]/div/a")
     private WebElement firstProductName;
 
-    @FindBy(xpath = "//div[@class='box browsingitem canBuy inStockAvailability action first firstRow']/div[2]/div/div/span[1]")
+    @FindBy(xpath = "//div[@class='box browsingitem canBuy inStockAvailability action firstRow'][1]/div[2]/div/div/span[1]")
     private WebElement firstProductPrice;
 
     public CategoryPage(WebDriver driver) {
